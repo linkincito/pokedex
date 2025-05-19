@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <meta name="description" content="practica de una pokedex usando position y flexbox" />
+    <meta name="author" content="Oroñez Maximiliano" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Pokedex</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Aplicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Juegos de cartas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/AcercaDeNosotros.html">Acerca de nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="pt-3">
+            <div class="p-2"><a href="../index.html">Inicio</a> / <a href="/pages/bulbasaur.html"
+                    class="link-dark">Bulbasaur N.º 0001</a> / <a href="#">Ivysaur N.º 0002...</a></div>
+        </section>
+        <section class="container bg-body-secondary rounded">
+            <h1 class="display-5 my-4 text-center">Charmander N.º 0004</h1>
+        </section>
+        <section class="container rounded my-4">
+            <div class="row">
+                <div class="border col-12 col-md-6 col-lg-6">
+                    <a href="#"><img
+                            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"
+                            alt="Bulbasaur" class="w-100" /></a>
+                </div>
+                <div class="bg-body-secondary border col-12 col-md-6 col-lg-6">
+                    <div>
+                        <h6 class="my-3">Descripción general</h6>
+                        <p class="my-3">
+                            Charmander es un Pokémon de tipo <b class="fuego p-1 rounded">fuego</b>Tiene una antorcha
+                            en la punta de su cola que crece a medida que va evolucionando
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="border col-12 col-md-6 col-lg-6">
+                            <h6 class="my-2">Características:</h6>
+                            <ul>
+                                <li>Altura: 1,5 m</li>
+                                <li>Peso: 10 kg</li>
+                                <li>Categoría: Fuego</li>
+                                <li>Tipo: <br> <b class="fuego p-1 rounded">🔥Fuego</b></li>
+                                <li>Habilidad: Llamaradas</li>
+                            </ul>
+                            <p class="">
+                                Descripción de la habilidad: Su temperatura llega hasta los 300°.
+                            </p>
+                        </div>
+                        <div class="border col-12 col-md-6 col-lg-6">
+                            <h6 class="my-2">Estadísticas base:</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Estadística</th>
+                                        <th scope="col">Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>PS (HP)</td>
+                                        <td>45</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Ataque</td>
+                                        <td>49</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Defensa</td>
+                                        <td>49</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Ataque Especial</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Defensa Especial</td>
+                                        <td>65</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Velocidad</td>
+                                        <td>45</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td><strong>Total</strong></td>
+                                        <td><strong>318</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-4">
+            <div class="row justify-content-around bg-dark-subtle rounded-5 ">
+                <h6 class="text-center display-6 mt-2 ">Evoluciones</h6>
+                <div class="col-12 col-md-4 col-lg-3 my-4 m-0">
+                    <article class="pokecar">
+                        <a href="#">
+                            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/005.png"
+                                alt="bulbasour" />
+                        </a>
+                        <p class="pokemonNumber">N.º 0001</p>
+                        <a href="" class="link-dark">
+                            <h4>Bulbasaur</h4>
+                        </a>
+                        <div class="linea">
+                            <div class="badge fuego">
+                                <p class="m-0">Planta</p>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 my-4 m-0">
+                    <article class="pokecar">
+                        <a href="#">
+                            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png"
+                                alt="Ivysaur" loading="lazy" />
+                        </a>
+                        <p class="pokemonNumber">N.º 0006</p>
+                        <a href="#" class="link-dark">
+                            <h4>Charizard</h4>
+                        </a>
+                        <div class="linea">
+                            <div class="badge fuego">
+                                <p class="m-0">🔥Fuego/p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+              
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <p>&copy; Todos los derechos reservados 2025</p>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

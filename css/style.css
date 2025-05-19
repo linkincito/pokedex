@@ -1,0 +1,301 @@
+:root {
+  --rojo: #e3350d;
+  --naranja: #ee6b2f;
+  --Amarillo: #e6bc2f;
+  --Azul: #1b53ba;
+  --Verde: #bdf1fc;
+  --planta: #9bcc50;
+  --veneno: #b97fc9;
+  --fuego: #fd7d24;
+  --hielo: #51c4e7;
+  --psiquico: #f366b9;
+  --gris: #616161;
+  --celeste: #5dade2;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+  flex-grow: 1;
+}
+/* Estilos para el navbar fijo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+nav {
+  text-align: center;
+  border-bottom: 3px solid #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--gris);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  background: #f2f2f2;
+}
+
+.active {
+  background: var(--rojo);
+}
+.active a{
+    color: white;
+}
+.active:hover {
+    background: #c02d0c;
+  }
+
+/* Espaciado para evitar que el navbar fijo cubra el contenido */
+main {
+  margin-top: 80px;
+  margin: 70px;
+}
+
+/* Estilos para el formulario de ordenamiento */
+form {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+select:hover {
+  background: #e6e6e6;
+}
+
+/* Estilos para el article del Pokémon */
+article {
+  width: 200px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards-evolutions {
+  width: 200px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+article img {
+  width: 100%;
+  /* display: block; */
+  margin-bottom: 10px;
+  background-color: #e5e3e3;
+}
+
+article p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+article h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.linea p {
+  font-size: 10px;
+  padding: 4px;
+}
+.planta {
+  background: var(--planta);
+}
+.veneno {
+  background: var(--veneno);
+}
+.fuego {
+  background-color: var(--fuego);
+}
+.volador{
+  background-color: var(--Verde);
+}
+.aquatico{
+  background-color: var(--celeste);
+}
+.hielo{
+  background-color: var(--hielo);
+}
+.sin-elemento{
+  background-color: var(--gris);
+}
+.psiquico{
+  background-color: #f366b9;
+}
+
+
+.badger {
+  border-radius: 5px;
+  display: inline-block;
+  width: 70px;
+}
+.linea {
+  color: white;
+  padding: 0px;
+  display: inline-block;
+  position: absolute;
+  bottom: 65px;
+  left: 5px;
+}
+
+.pokemonNumber {
+  color: var(--gris);
+}
+/* Pseudo-elementos y pseudo-clases */
+
+article:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0px;
+  background-color: black;
+  color: white;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  width: 50px;
+  background: #414141;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.sidebar:hover {
+  background: #414141;
+}
+
+.sidebar div {
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: rgb(158, 152, 152);
+}
+.sidebar div:hover {
+
+  color: rgb(255, 255, 255);
+}
+
+.sidebar .search {
+  border-radius: 50%;
+}
+.sidebar p{
+    font-size: 12px
+}
+
+/*cartas laterales*/
+
+.pokepadre{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  /*border: 1px solid gray;*/
+  
+}
+
+@media all and (max-width: 767px){
+    .pokecar{
+      width: 100%;
+    }
+    nav ul li{
+      display: inline-block;
+      padding: 15px 5px;
+    }
+    nav{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 991px){
+  
+  .pokecar{
+    width: 45%;
+  }
+  li a{
+    font-size: 22px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    padding: 18px 30px;
+  }
+  nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card{
+    height: 280px;
+  }
+
+}
+
+/*Media query para dispositivos large*/
+@media screen and (min-width: 992px) {
+  .card{
+    height: 380px;
+  }
+}
