@@ -3,7 +3,7 @@
 Practica de trabajo grupal con git, github.
 
 ## Demo del proyecto:
-👉 Mira la demo del proyecto [aqui.](https://app.netlify.com/projects/pokedexgrupol/overview)
+👉 Mira la demo del proyecto [aqui.](https://pokedexpikapika.netlify.app/)
 
 ## Tecnologias utilizadas:
 
